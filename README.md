@@ -1,5 +1,7 @@
 # CommonCoding
 
+Forked from https://github.com/lantua/CommonCoding
+
 Common Swift Encoder/Decoder
 
 ## Binary Codings
