@@ -13,9 +13,12 @@ public struct BinaryDecoder {
     public func decode<T>(_: T.Type, from data: Data) throws -> T where T: Decodable {
         return try .init(from: InternalDecoder(data: data, userInfo: userInfo))
     }
+  
+    public init() {}
 }
 
 public struct BinaryEncoder {
+    public init() {}
     public var userInfo: [CodingUserInfoKey: Any] = [:]
 
     public func encode<S>(_ value: S) throws -> Data where S: Encodable {
