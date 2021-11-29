@@ -12,7 +12,7 @@ protocol TemporaryEncodingStorage {
     func register(_: EncodingOptimizer)
 }
 
-class TopLevelTemporaryEncodingStorage: TemporaryEncodingStorage {
+public class TopLevelTemporaryEncodingStorage: TemporaryEncodingStorage {
     var value: EncodingOptimizer = NilOptimizer()
 
     func register(_ newValue: EncodingOptimizer) {
